@@ -11,10 +11,10 @@ $apiUrl   = "https://api.telegram.org/bot$botToken/";
 
 // =============== إعدادات Supabase ===============
 // عنوان المشروع (Project URL) - الموجود ضمن معلوماتك في Supabase
-$SUPABASE_URL = 'https://qmfewiavybhlppuircud.supabase.co';
+$SUPABASE_URL = 'YOUR_SUPABASE_URL';
 
 // المفتاح (Key) - يمكنك استخدام الـ service_role أو anon public حسب إعدادك لـ RLS
-$SUPABASE_KEY = 'eyJhbGci...'; // ضع هنا المفتاح المناسب
+$SUPABASE_KEY = 'YOUR_SUBABASE_KEY'; // ضع هنا المفتاح المناسب
 
 // اسم الجدول الذي سنحفظ فيه الهمسات
 $TABLE_NAME = 'whispers';
