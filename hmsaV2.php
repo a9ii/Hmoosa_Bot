@@ -352,10 +352,11 @@ elseif (isset($update['inline_query'])) {
             'type' => 'article',
             'id'   => bin2hex(random_bytes(5)),
             'title'=> 'خطأ في الصيغة ⚠️',
-            'input_message_content' => [
-                'message_text' => "❌ صيغة الهمسة غير صحيحة.\nالصيغة الصحيحة:\n@bot_username نص_الهمسة @username_المستلم"
+'input_message_content' => [
+     'message_text' => "❌ صيغة الهمسة غير صحيحة.\nالصيغة الصحيحة:\n@hmoosa_bot الرسالة @username"
             ],
-            'description' => "❌ الصيغة: @bot_username نص_الهمسة @username_المستلم"
+                      'description' => "❌ صيغة الهمسة غير صحيحة.\nالصيغة الصحيحة:\n@hmoosa_bot الرسالة @username"
+
         ];
         $results = [$result];
         $parameters = [
