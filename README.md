@@ -61,7 +61,19 @@ CREATE TABLE whispers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-
+**FOR SUPABASE**
+```sql
+CREATE TABLE IF NOT EXISTS public.whispers (
+    id BIGSERIAL PRIMARY KEY,
+    sender_id BIGINT,
+    sender_username TEXT,
+    recipient_id BIGINT,
+    recipient_username TEXT,
+    group_id BIGINT,
+    message TEXT,
+    status TEXT DEFAULT 'unread'
+);
+```
 ### 4️⃣ **Set Up Webhook**
 Activate the bot's Webhook by executing the following command:
 ```bash
